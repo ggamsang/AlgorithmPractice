@@ -1,7 +1,9 @@
 #include <iostream>
 
-int main(){
-  int n = 0, k = 0, b = 0, c[100000] = {0,};
+int main()
+{
+  int n = 0, k = 0, b = 0,
+    c[100000] = {0,};
   
   std::cin >> n >> k;
 
@@ -14,8 +16,10 @@ int main(){
     if(i != k)
       total += c[i];
 
-  if(total/2 == b) std::cout << "Bon Appetit" << std::endl;
-  else std::cout << b - (total / 2) << std::endl;
+  if(total/2 == b)
+    std::cout << "Bon Appetit" << std::endl;
+  else
+    std::cout << b - (total / 2) << std::endl;
 
   return 0;
 }
