@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+
+int f(std::vector<int>& ary, int x){
+  int sz = ary.size();
+  for(int i=0;i<sz;++i) {
+    if(ary[i]==x){
+      return i+1;
+    }
+  }
+  return 0;
+}
+
+int main(){
+  int n;
+  std::cin >> n;
+
+  std::vector<int> ary(n);
+  for(int i=0;i<n;i++)
+    std::cin >> ary[n];
+
+  for(int x=1;x<=n;x++)
+    std::cout << f(ary, f(ary, x)) << std::endl;
+
+  return 0;
+}
