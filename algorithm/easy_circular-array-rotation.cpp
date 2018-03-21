@@ -14,10 +14,8 @@ std::vector <int> circular_rotation(std::vector<int>a, std::vector<int>m, int k)
     return m;
   }
 
-  int idx = 0;
   for(int i=0; i<s; ++i) {
-    idx = (i+k)%s;
-    tmp[idx]=a[i];
+    tmp[(i+k)%s]=a[i];
   }
   for(int i=0;i<(int)m.size();++i){
     m[i] = tmp[m[i]];
