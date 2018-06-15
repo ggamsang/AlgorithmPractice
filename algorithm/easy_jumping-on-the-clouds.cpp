@@ -1,6 +1,4 @@
-//#include <vector>
-//#include <iostream>
-//#include <fstream>
+//#include <bits/stdc++.h>
 #include "/Users/ggamsang/lib/stdc++.h"
 
 using namespace std;
