@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+long Lilahs_infinite(std::string s, long n){
+	long cnt = 0;
+	char first = 'a';// s[0];
+	//std::cout << "s length: " << s.length() << std::endl;
+	for(int i = 1; i<=s.length(); ++i){
+	  if(first == s[i-1]){
+	    if(n % s.length() == 0){
+	      cnt += n/s.length();
+	    }else{
+	      cnt += (long)n/s.length();
+	      long tmp = (long)n/s.length()*s.length();
+	      cnt += (long)(n-tmp)/i;
+	     }
+	  }
+	}
+	return cnt;
+}
+
+int main(int argc, char* argv[]){
+	std::string s;
+	long n =0;
+	std::cin >> s >> n;
+	std::cout << Lilahs_infinite(s, n) << std::endl;
+	return 0;
+}
