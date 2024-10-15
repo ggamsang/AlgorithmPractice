@@ -1,7 +1,6 @@
 ## 코딩테스트준비 레포지토리
 ---
-### HackerRank
+### Leetcode(타입스크립트)
 
-### Leetcode
-
-### 프로그래머스
+### 프로그래머스(C/C++)
+### HackerRank(C/C++)
