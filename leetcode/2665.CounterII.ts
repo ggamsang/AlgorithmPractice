@@ -5,7 +5,7 @@ type Counter = {
 }
 
 function createCounter(init: number): Counter {
-	const num = init
+	let num = init
 	return {
 		increment: (): number => ++num,
 		decrement: (): number => --num,
