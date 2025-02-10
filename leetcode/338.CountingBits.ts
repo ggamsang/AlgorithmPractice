@@ -14,3 +14,13 @@ function countBits(n: number): number[] {
     }
     return counts
 }
+
+/* Solutions  */
+function countBits2(num: number): number[] {
+    const res = new Uint8Array(num + 1)
+    for (let i = 0; i < res.length; i++)
+      res[i] = res[i >> 1] + (i & 1)
+
+    return [...res]
+}
+
